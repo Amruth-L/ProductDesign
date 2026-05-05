@@ -5,7 +5,8 @@ const ProductCard = ({ product }) => {
                 <img src={product.image} alt={product.title} className="max-h-full" />
             </div>
             <h3 className="text-gray-800 font-semibold truncate">{product.title}</h3>
-            <p className="text-blue 600 font-bold mt-2">$ {product.price}</p>
+            <p className="text-blue-600 font-bold mt-2">$ {product.price}</p>
+            <p className="text-gray-500 text-sm mt-2 line-clamp-2">${product.description}</p>
         </div>
     );
 };
