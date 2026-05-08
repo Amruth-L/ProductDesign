@@ -16,9 +16,9 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden md:flex items-center gap-10 text-sm font-semibold text-gray-500">
-                    <a href="#" className="hover:text-blue-600 transition-colors">Catalog</a>
-                    <a href="#" className="hover:text-blue-600 transition-colors">Trending</a>
-                    <a href="#" className="hover:text-blue-600 transition-colors">Support</a>
+                    <a href="https://www.catalogclothing.com.au/?srsltid=AfmBOoo2KbJfmwQuOrquyGfds_KnCk5sFGGVGWQfwxPMj_UqGwpxDWJH" className="hover:text-blue-600 transition-colors">Catalog</a>
+                    <a href="https://www2.hm.com/en_in/men/new-arrivals/clothes.html?srsltid=AfmBOor8s6FACwrkikKOneZOfkQsYNutbuF5kgjRI5mOE7YtcdAuL-RS" className="hover:text-blue-600 transition-colors">Trending</a>
+                    <a href="https://amitoje.com/product-display-stands/" className="hover:text-blue-600 transition-colors">Support</a>
                 </div>
             </div>
         </nav>
