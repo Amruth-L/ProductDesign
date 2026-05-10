@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ProductGrid from './components/ProductGrid';
 import Navbar from './components/Navbar';
+import Footer from './components/footer';
 
 const App = () => {
     const [products, setProducts] = useState([]);
@@ -28,20 +29,24 @@ const App = () => {
                     className="mb-8 p-3 w-full max-w-sm rounded-lg border-2 border-transparent focus:border-blue-500 outline-none shadow-sm transition-all"
                     onChange={(e) => setSearchTerm(e.target.value)}
                 />
+                <main className='flex-grow max-w-7xl mx-auto p-6 w-full'>
 
-                {products.length > 0 ? (
-                    <ProductGrid items={filteredItems} />
-                ) : (
-                    <div className="flex justify-center mt-20">
-                        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
-                    </div>
-                )}
+                    {products.length > 0 ? (
+                        <ProductGrid items={filteredItems} />
+                    ) : (
+                        <div className="flex justify-center mt-20">
+                            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+                        </div>
+                    )}
 
-                {products.length > 0 && filteredItems.length === 0 && (
-                    <p className="text-center text-gray-500 mt-10">No products found matching "{searchTerm}"</p>
-                )}
+                    {products.length > 0 && filteredItems.length === 0 && (
+                        <p className="text-center text-gray-500 mt-10">No products found matching "{searchTerm}"</p>
+                    )}
+                </main>
+                <Footer />
             </div>
         </div>
+
     );
 };
 
